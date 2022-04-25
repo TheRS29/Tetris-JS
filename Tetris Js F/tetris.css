@@ -1,0 +1,207 @@
+@font-face {
+    font-family: Tetris;
+    src: url(Tetris.ttf);
+}
+
+*{
+    z-index: 2;
+}
+
+body{
+    background-color: rgb(237, 77, 33);
+    font-family: Tetris;
+    font-weight: bold;
+}
+
+#contenedorTeclas{
+    position: absolute;
+    border: 1px solid black;
+    width: 200px;
+    height: 300px;
+    right: 300px;
+    top: 430px;
+}
+
+
+#flechaArriba{
+    position: relative;
+    width: 50px;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#flechaAbajo{
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    width: 50px;
+    margin: 0 auto;
+}
+
+#flechaDerecha{
+    display: inline-block;
+    position: relative;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#flechaIzquierda{
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;
+    margin-top: 5px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+#txtFlechas{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+
+#txtAbajo{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+#txtRotar{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+#scoreContainer{
+    bottom: 130px;
+    left: 700px;
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+#scoreContainer span{
+    margin-left: 55px;
+}
+
+
+.contenedor{
+    display: flex;
+    background-color: rgba(168, 163, 163, 0.993);
+    margin: 0 auto;
+    width: 500px;
+    height: 730px;
+    box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.518);
+    z-index: 1;
+}
+
+
+.styleContainer1{
+    width: 250px;
+    height: 450px;
+    background-color: rgb(70, 138, 146);
+    position: absolute;
+    left: 640px;
+    top: 80px;
+    z-index: 0;
+}
+
+.styleContainer2{
+    width: 100px;
+    height: 135px;
+    background-color: rgb(70, 138, 146);
+    position: absolute;
+    z-index: 0;
+    right: 550px;
+    top: 80px;
+}
+
+
+
+
+
+
+#datosContainer{
+    /*border: 1px solid black;*/
+    margin-top: 10px;
+    font-family: Tetris;
+}
+
+
+#start-button{
+    background: url(boton-tetris.png) rgb(70, 138, 146);
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 35px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.518);
+    position: absolute;
+    top: 30px;
+    left: 350px;
+}
+
+
+ h3{
+    position:absolute;
+    margin-top: 200px;
+    font-size: 30px;
+} 
+
+
+.grid{
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    margin-top: 100px;
+    margin-left: 150px;
+    z-index: 2;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+}
+
+
+.tetromino {
+    background-color: rgb(0, 153, 255);
+}
+
+
+div.tetromino {
+    border: 1px solid black;
+}
+
+.mini-grid div.tetromino{
+    border: 1px solid black;
+}
+
+.mini-grid{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    margin-left: 10px;
+    margin-top: 100px;
+    z-index: 2;
+}
+
+.mini-grid div{
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+}

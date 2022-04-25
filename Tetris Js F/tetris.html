@@ -1,0 +1,296 @@
+<head>
+
+    <link rel="stylesheet" href="tetris.css">
+    
+    <title>Practica Tetris JS</title>
+    
+    <script src="tetris.js"></script>
+    
+    <link rel="icon" href="icon-tetris.png">
+    </head>
+    
+    <body>
+    
+    
+        
+       <div id="contenedorTeclas">
+        
+
+           <div id="flechaIzquierda"><img src="flechaIzquierda.png" alt="Izquierda" width="50px"></div>
+
+           <div id="flechaDerecha"><img src="flecha-correcta (1).png" alt="Derecha" width="50px"></div>
+
+            <p id="txtFlechas">Desplazarse a los lados</p>
+
+
+           <div id="flechaAbajo"><img src="flechaAbajo.png" alt="Abajo" width="50px"></div>
+
+           <p id="txtAbajo">Ir hacia abajo</p>
+
+
+           <div id="flechaArriba"><img src="flechaArriba.png" alt="Arriba" width="50px"></div>
+           
+            <p id="txtRotar">Rotar la Pieza</p>
+
+
+
+       </div>
+    
+      <div class="contenedor">
+    
+        <div id="datosContainer">
+            
+            <h3 id="scoreContainer">Score:<br>
+                <span id="score">
+                    0
+                </span>
+            </h3>
+    
+            <div class="btnContainer">
+                <button id="start-button">Start</button>
+            </div>
+        </div>
+
+
+    <div class="styleContainer1"></div>
+    
+    <div class="styleContainer2"></div>
+
+        <div class="grid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="taken" style="border: none!important;"></div>
+            <div class="taken" style="border: none!important;"></div>
+            <div class="taken" style="border: none!important;"></div>
+            <div class="taken" style="border: none!important;"></div>
+            <div class="taken" style="border: none!important;"></div>
+            <div class="taken" style="border: none!important;"></div>
+            <div class="taken" style="border: none!important;"></div>
+            <div class="taken" style="border: none!important;"></div>
+            <div class="taken" style="border: none!important;"></div>
+            <div class="taken" style="border: none!important;"></div>
+        </div>
+    
+    
+    
+    
+        <div class="mini-grid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+
+
+</body>
